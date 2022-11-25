@@ -3,7 +3,7 @@
 }
 
 .slide {
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-name: slidein;
     background-color: orange;
 }
@@ -59,12 +59,16 @@
 
 .img-container {
     position: relative;
-    width: 400px;
     height: 400px;
+    margin: 0 auto;
 }
 
 .img-container>img {
     max-width: 400px;
     max-height: 400px;
     position: absolute;
+}
+
+.dummy {
+    display: none;
 }

@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var i = 0
     const img_o = document.getElementById('img_o')
     const img_i = document.getElementById('img_i')
+    const dummy_i = document.getElementById('dummy_i')
+    const dummy_o = document.getElementById('dummy_o')
 
     const progress = document.getElementById('progress')
     btns = document.querySelectorAll('.btn')
@@ -32,15 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
         progress.classList.add('slide')
         fadeIn(img_i)
         fadeOut(img_o)
+        const [src_o, src_i] = pairs[i++]
+        dummy_o.src = src_o
+        dummy_i.src = src_i
         setTimeout(() => {
-            const [src_o, src_i] = pairs[i++]
             img_o.src = src_o
             img_i.src = src_i
             fadeIn(img_o)
             hidden(img_i)
             btns.forEach(btn => btn.removeAttribute('disabled'))
             progress.classList.remove('slide')
-        }, 4000)
+        }, 3000)
     }
     nextImg()
     btns.forEach(btn => btn.addEventListener('click', nextImg))
