@@ -1,0 +1,20 @@
+.slide {
+    animation-duration: 5s;
+    animation-name: slidein;
+    background-color: orange;
+}
+
+@keyframes slidein {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#progress {
+    height: 1em;
+    width: 100%;
+}
