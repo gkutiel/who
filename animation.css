@@ -1,7 +1,44 @@
+.hidden {
+    opacity: 0;
+}
+
 .slide {
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-name: slidein;
     background-color: orange;
+}
+
+.fadeIn {
+    animation-duration: 2s;
+    animation-name: fadeIn;
+    opacity: 1;
+}
+
+.fadeOut {
+    animation-duration: 2s;
+    animation-name: fadeOut;
+    opacity: 0;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes slidein {
@@ -18,4 +55,16 @@
     margin: 1em 0;
     height: 1em;
     width: 100%;
+}
+
+.img-container {
+    width: 600px;
+    height: 600px;
+    /* text-align: center; */
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container>img {
+    position: absolute;
 }
