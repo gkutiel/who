@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var i = 0
     const img = document.getElementById('img')
+
+    const [src_o, _] = pairs[0]
+    img.src = src_o
+
+
     const progress = document.getElementById('progress')
     btns = document.querySelectorAll('.btn')
     function nextImg() {
@@ -22,6 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
             progress.classList.remove('slide')
         }, 5000)
     }
-    nextImg()
     btns.forEach(btn => btn.addEventListener('click', nextImg))
 })
