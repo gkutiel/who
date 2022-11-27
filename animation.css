@@ -77,11 +77,17 @@
     display: none;
 }
 
-button {
-    font-size: 2em;
-}
-
 #confetti {
     width: 100%;
     height: 100%;
+}
+
+#btns {
+    display: flex;
+}
+
+#btns>button {
+    flex-grow: 1;
+    font-size: 120%;
+    margin: 0 .1em;
 }
