@@ -6,6 +6,9 @@ authors = ["Gilad Kutiel <gilad.kutiel@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+Google-Images-Search = "^1.4.6"
+requests = "^2.28.1"
+tqdm = "^4.64.1"
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.7.8"
