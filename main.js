@@ -29,16 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const progress = document.getElementById('progress')
     btns = document.querySelectorAll('.btn')
-    // const myConfetti = confetti.create(document.getElementById('confetti'), {
-    //     useWorker: true
-    // });
     function nextImg() {
         confetti()
-        // myConfetti.reset()
-        // myConfetti({
-        //     particleCount: 100,
-        //     spread: 160
-        // });
         btns.forEach(btn => btn.setAttribute('disabled', 'true'))
         progress.classList.add('slide')
         fadeIn(img_i)
